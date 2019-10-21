@@ -1,0 +1,9 @@
+#We have list of tuples with user id and numbers of friends. I figured it out with other numbers.
+num_friends_by_id=[(1,2),(5,6),(3,1),(9,11),(5,12)]
+#And now we want to sort them by second element. Numbers of friends.
+#In book it looks: sorted(num_friends_by_id,key=lambda (user_id,num_friends):num_friends,reverse=True) and it must be sorted...
+#But I had the problem:SyntaxError: invalid syntax in place:"...lambda (here)(user_id..."
+#I solved this problem:
+sort=sorted(list_of_tuples,key=lambda num_users:num_users[1],reverse=True)
+
+#What do you think about it? May be I doing something wrong?
